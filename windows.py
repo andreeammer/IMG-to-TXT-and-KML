@@ -29,7 +29,7 @@ extract_coordinates_cmd = 'exiftool -T -c "%.6f" -p "${Filepath};${GPSLatitude};
 # Run the command to extract GPS coordinates and save them to a text file
 subprocess.run(extract_coordinates_cmd, shell=True)
 
-# Read the contents of the CSV file
+# Read the contents of the txt file
 with open('coordinates.txt', 'r', encoding='utf-8') as file:
     lines = file.readlines()
 
@@ -44,6 +44,6 @@ for i in range(1, len(lines)):
 # Insert the header at the beginning of the file
 lines.insert(0, header)
 
-# Write the updated lines back to the CSV file
+# Write the updated lines back to the txt file
 with open('coordinates.txt', 'w', encoding='utf-8') as file:
     file.writelines(lines)
