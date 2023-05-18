@@ -64,3 +64,4 @@ with open('coordinates.txt', 'w', encoding='utf-8') as file:
     file.write('\n'.join(coordinates))
 
 print("Coordinates extracted and written to coordinates.txt successfully.")
+
