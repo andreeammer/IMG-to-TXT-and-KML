@@ -47,3 +47,5 @@ lines.insert(0, header)
 # Write the updated lines back to the txt file
 with open('coordinates.txt', 'w', encoding='utf-8') as file:
     file.writelines(lines)
+
+    
